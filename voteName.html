@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>排行榜</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<link rel="stylesheet" type="text/css" href="css/wappublic.css">
+	<link rel="stylesheet" type="text/css" href="css/voteName.css">
+	<script type="text/javascript" src="js/fontSize.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+    <!--header-->
+    <header>
+    	<ul>
+    		<li><span>姓名</span><input type="text"></li>
+    		<li><span>手机</span><input type="tel"></li>
+    		<li><span>图片</span><input class="imgPut" type="file"  onchange="showPreview(this)"><img id="img_id" src=""></li>
+    		<li><textarea name="" id="" cols="30" rows="10" placeholder="个人简介"></textarea></li>
+    		<li><a href="javascript:;">提交</a></li>
+    	</ul>
+    </header>
+    <script type="text/javascript">
+
+        function showPreview(source) {  
+        var val=$(source).val();
+        var fileSize=10*1024*1024;
+        // $(".line").removeClass("lineMove");
+        if(!/\.(gif|png|jpeg|jpg|GIF|PNG|JPG)$/.test(val)){
+            //checkTips("图片类型错误,请选择gif/png/jpg");
+            $(source).val("");
+            return false;
+        }else{
+            if(source.files[0].size<fileSize){
+                var file = source.files[0];  
+                fileObj=file;
+                if(window.FileReader) {  
+                    var fr = new FileReader();  
+                    fr.onloadend = function(e) {  
+                    	$(".face").find(".faceInfo").remove();
+                        $(source).val("");
+                        var baseImg=e.target.result; 
+                        $("#img_id").show();
+                       $("#img_id").attr("src",baseImg);
+                   
+                    };  
+                    fr.readAsDataURL(file);  
+                }
+            }else{
+               $(source).val("");
+                return false;
+            }
+        }
+    } 
+    </script>
+</body>
+</html>

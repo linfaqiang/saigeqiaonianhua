@@ -1,0 +1,204 @@
+body{height: 100%;}
+body{
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  overflow-scrolling:touch;
+  -webkit-overflow-scrolling:touch;
+  position: relative;            
+  font-family: "Microsoft Yahei",Arial,Helvetica,sans-serif;
+  font-size: .24rem; 
+  color: #fff;
+  background-color: #ff5d5b;
+  }
+img{
+  display: block;
+  max-width: 100%;
+  }
+a{
+  display: block;
+}
+.lf{float: left;}
+.rt{float: right;}
+.clear{clear: both;}
+
+/*header*/
+header{
+  position: relative;
+  width: 100%;
+  height: 6.4rem;
+  overflow: hidden;
+}
+header img{
+ margin-top: -2rem;
+}
+header a{
+  position: absolute;
+  left: 0;
+  bottom:0;
+  display: block;
+  width: 100%;
+  height: .6rem;
+  line-height: .6rem;
+  background-color: rgba(0,0,0,0.6);
+  font-size: .26rem;
+  color: #fff;
+  text-align: center;
+}
+header a p{
+  position: absolute;
+  left: .28rem;
+  top: 0;
+}
+/*section*/
+section{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+ 
+  
+}
+section .invite-nav{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  height: .88rem;
+  line-height: .88rem;
+   padding:0 .14rem;
+  border-bottom: 1px solid #fff;
+  display: box;
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  font-size: .26rem;
+  text-align: center;
+}
+section .invite-nav .invite-nav-left{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 46.73%;
+
+}
+section .invite-nav .invite-nav-right{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 53.27%;
+  height: .34rem;
+}
+section .invite-nav .line-container{
+  width: 1px;
+  height: .34rem;
+  margin-top: .28rem;
+  background-color: #fff;
+}
+
+/*section content-container*/
+section .content-container{
+  padding:.03rem .32rem 1.16rem .28rem;
+
+}
+section .content-container .title-container{
+   width: 100%;
+   height: .9rem;
+   overflow: hidden;
+}
+section .content-container .title-container h3{
+   float: left;
+   line-height: .9rem;
+   font-size: .22rem;
+   font-weight: 600;
+}
+section .content-container .title-container a{
+   float: right;
+   display: block;
+   width: 2.1rem;
+   height: .5rem;
+   line-height: .5rem;
+   margin-top: .2rem;
+   border-radius: .05rem;
+   -webkit-border-radius: .05rem;
+   background: url('../images/invite.png') .25rem center no-repeat;
+   background-size: .23rem .29rem;
+   background-color: #fbcf48;
+   font-size: .2rem;
+   color: #954101;
+   text-indent: .65rem;
+}
+section .content-container p{
+  line-height: .35rem;
+   font-size: .2rem;
+   text-align:justify;
+   text-justify:inter-ideograph;
+}
+
+/*footer*/
+footer{
+  position: fixed;
+  left: 0;
+  bottom:0;
+  width: 100%;
+  height: .8rem;
+  display: box;
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+}
+footer a{
+  display: block;
+  height: 100%;
+  line-height: .8rem;
+  font-size: .24rem;
+  text-align: center;
+}
+footer a:nth-child(1){
+  width: 33.75%;
+  background-color: #954101;
+  color: #fff;
+}
+footer a:nth-child(2){
+  width: 66.25%;
+  background-color: #fbcf48;
+  color: #954101;
+}
+
+section .invite-img{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  padding:.33rem .14rem;
+}
+section .invite-img span,section .invite-img i{
+  display: inline-block;
+  vertical-align: middle;
+}
+section .invite-img span{
+  width: 1.44rem;
+  height: .7rem;
+  line-height: .7rem;
+  background:url('../images/love.png') .1rem center no-repeat;
+  background-size: .54rem .5rem;
+  font-size: .22rem;
+  text-align: right;
+}
+section .invite-img i{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: .7rem;
+  height: .7rem;
+  padding:.03rem;
+  margin-bottom: .05rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+section .invite-yellow{
+  width: 100%;
+  height: .88rem;
+  line-height: .88rem;
+  margin-bottom: .2rem;
+  background-color: #fdc16f;
+  font-size: .22rem;
+  color: #fff;
+  text-indent: .28rem;
+}

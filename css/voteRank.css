@@ -1,0 +1,155 @@
+body{height: 100%;}
+body{
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  overflow-scrolling:touch;
+  -webkit-overflow-scrolling:touch;
+  position: relative;            
+  font-family: "Microsoft Yahei",Arial,Helvetica,sans-serif;
+  font-size: .24rem; 
+  color: #fff;
+  background-color: #ff5d5b;
+  }
+img{
+  display: block;
+  max-width: 100%;
+  }
+a{
+  display: block;
+}
+.lf{float: left;}
+.rt{float: right;}
+.clear{clear: both;}
+
+/*header*/
+header{
+  position: relative;
+  width: 100%;
+  height: 2.23rem;
+  background: url('../images/rect.png') center .98rem no-repeat;
+  background-size: 4.5rem .93rem;
+}
+header span{
+  position: absolute;
+  left: .14rem;
+  top:.09rem;
+  display: block;
+  padding:.1rem;
+  font-size: .26rem;
+}
+
+/*section*/
+section{
+  width: 100%;
+  margin-bottom: .6rem;
+}
+section ul{
+  width: 100%;
+}
+section ul li{
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ff5d5b;
+  overflow: hidden;
+}
+section ul li a{
+  position: relative;
+  width: 100%;
+  display: box;
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  color: #505050;
+}
+section ul li a .icon-container{
+  position: relative;
+  width: 1rem;
+  line-height: .7rem;
+  text-align: center;
+}
+section ul li a .icon-circle{
+  line-height: 1.1rem;
+  background: url('../images/circle.png') center center no-repeat;
+  background-size: .62rem .53rem;
+  font-size: .24rem;
+  color: #e60012;
+}
+/*section ul li a .icon-circle span{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: .24rem;
+  color: #e60012;
+  text-align: center;
+}*/
+section ul li a .img-container{ 
+  padding:.08rem 0;
+  overflow: hidden;
+}
+section ul li a .img-container img{
+   width: 1.06rem;
+   height: 1.06rem;
+}
+section ul li a .text-container{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: box;
+  display: -webkit-box;
+  display:flex;
+  display: -webkit-flex;
+  justify-content:center;
+  align-items:center;
+  -webkit-justify-content:center;
+  -webkit-align-items:center;
+  width: 1.7rem;
+  line-height: .7rem;
+  color: #000;
+  text-align: center;
+}
+section ul li a .text-box{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: box;
+  display: -webkit-box;
+  display:flex;
+  display: -webkit-flex;
+  justify-content:center;
+  align-items:center;
+  width: 1.7rem;
+  line-height: 1.22rem;
+  color: #000;
+  text-align: center;
+}
+section ul li a .text-box span{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+section ul li a .num-container{
+  position: absolute;
+  right: .2rem;
+  top:.2rem;
+  text-align: right;
+}
+section ul li a .num-container span{
+  display:inline-block;
+}
+section ul li a .mid-container{
+  top:.3rem;
+}
+section ul li a .mid-container span{
+  display: block;
+}
+
+/*footer*/
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: .6rem;
+  background-color: #ff5d5b;
+}
+
